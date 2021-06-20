@@ -29,11 +29,11 @@
           <td>{{item.product.price}}</td>
           <td>
             <div class="qtyArea d-flex">
-              <button type="button mx-0" @click="changeQty('reduce', item, item.qty)">
+              <button type="button" @click="changeQty('reduce', item, item.qty)">
                 <font-awesome-icon icon="caret-left" class="icon fs-5"></font-awesome-icon>
               </button>
               <span class="productQty">{{item.qty}}</span>
-              <button type="button mx-0" @click="changeQty('add', item, item.qty)">
+              <button type="button" @click="changeQty('add', item, item.qty)">
                 <font-awesome-icon icon="caret-right" class="icon fs-5"></font-awesome-icon>
               </button>
               {{item.product.unit}}

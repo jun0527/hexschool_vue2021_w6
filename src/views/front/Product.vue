@@ -20,12 +20,12 @@
         </p>
         <div class="d-flex justify-content-between align-items-end">
           <p class="qtyArea d-flex align-items-center mb-0 fs-4">
-            購買數量：<button class="px-2 fs-2 mt-0" style="button" :disabled="tempQty===1"
+            購買數量：<button class="px-2 fs-2 mt-0" type="button" :disabled="tempQty===1"
             @click="changeQty('reduce')">
               <font-awesome-icon icon="caret-left" class="icon"></font-awesome-icon>
             </button>
             <span>{{tempQty}}</span>
-            <button class="px-2 fs-2 mt-0" style="button" @click="changeQty('add')">
+            <button class="px-2 fs-2 mt-0" type="button" @click="changeQty('add')">
               <font-awesome-icon icon="caret-right" class="icon"></font-awesome-icon>
             </button>
           </p>
