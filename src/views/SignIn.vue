@@ -12,7 +12,7 @@
       <label  for="password">密碼</label>
       <Field type="password" class="form-control" :class="{'is-invalid': errors['密碼']}"
       id="password" name="密碼" v-model.trim="user.password" placeholder="請輸入密碼"
-      rules="required|email"></Field>
+      rules="required"></Field>
       <ErrorMessage class="invalid-feedback" name="密碼"></ErrorMessage>
     </div>
     <div class="formGroup mb-3">
