@@ -64,10 +64,10 @@ export default {
   methods: {
     isPhone(value) {
       if (!value) {
-        return '收件人電話 為必填';
+        return '收件人手機號碼 為必填';
       }
       const phoneNumber = /^(09)[0-9]{8}$/;
-      return phoneNumber.test(value) ? true : '收件人電話 須為正確的手機號碼';
+      return phoneNumber.test(value) ? true : '收件人手機號碼 須為正確的手機號碼';
     },
     submitData() {
       this.$refs.submitModal.openModal();
