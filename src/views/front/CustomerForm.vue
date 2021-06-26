@@ -17,11 +17,11 @@
         <Error-Message name="收件人姓名" class="invalid-feedback"></Error-Message>
       </div>
       <div class="formGroup mb-3">
-        <label for="tel" class="form-label">收件人電話</label>
-        <Field type="tel" name="收件人電話" id="tel"
-        class="form-control" :class="{'is-invalid':errors['收件人電話']}"
+        <label for="tel" class="form-label">收件人手機號碼</label>
+        <Field type="tel" name="收件人手機號碼" id="tel"
+        class="form-control" :class="{'is-invalid':errors['收件人手機號碼']}"
           :rules="isPhone" v-model.trim="user.tel"></Field>
-        <Error-Message name="收件人電話" class="invalid-feedback"></Error-Message>
+        <Error-Message name="收件人手機號碼" class="invalid-feedback"></Error-Message>
       </div>
       <div class="formGroup mb-3">
         <label for="address" class="form-label">收件人地址</label>
@@ -67,7 +67,7 @@ export default {
         return '收件人電話 為必填';
       }
       const phoneNumber = /^(09)[0-9]{8}$/;
-      return phoneNumber.test(value) ? true : '收件人電話 須為正確的電話號碼';
+      return phoneNumber.test(value) ? true : '收件人電話 須為正確的手機號碼';
     },
     submitData() {
       this.$refs.submitModal.openModal();
